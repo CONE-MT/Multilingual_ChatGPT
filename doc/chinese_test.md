@@ -4,69 +4,49 @@ input sentence: request text
 
 direct response: the response from ChatGPT using input sentence as input
 
-translation(chatgpt) of input sentence: translate input sentence using ChatGPT
+translation (chatgpt) of input sentence: translate input sentence using ChatGPT
 
-response of translation(chatgpt): the response from ChatGPT using translation of input sentence as input
+response of translation (chatgpt): the response from ChatGPT using translation of input sentence as input
 
-translation(chatgpt) of response: translate response of translation using ChatGPT
+translation (chatgpt) of response: translate response of translation using ChatGPT
 ```
-[content creation](#content-creation)
+[content creation](#Content-Creation)
 
-[code generation](#code-generation)
+[code generation](#Code-Generation)
 
-[summarization](#summarization)
+[summarization](#Summarization)
 
 It is easy to see that when we use English as the input for generation, 
 we can get more detailed content creation, 
 as well as more concise and precise code implementation and text summarization.
 
-[cases(excel version)](./case.xlsx)
+[cases (excel version)](./case.xlsx)
 
 
-## content creation
+## Content Creation
 
-### Example1
+***
+### Example 1
+In the following example, when asking questions in English, the story plot is richer compared to the answers from questions in Chinese.
 
-### input sentence： 
-请写一个关于美国的笑话
-
-### direct response:
-
-一天，一位美国人、一位英国人和一位加拿大人一起去打高尔夫球。当他们走到球洞附近时，他们发现一个神奇的青蛙，它说：“如果你把我放在球洞中心，我会向你们许愿。”
-
-三个人都放下了自己的球，让青蛙跳了进去。当青蛙许完愿后，英国人说：“我希望我的家乡泰晤士河水位上涨10英尺。” 在很短的时间内，青蛙的愿望成真了。
-
-接下来，加拿大人说：“我希望我国的森林重新长回来。” 同样，青蛙的愿望又成真了。
-
-最后，轮到美国人了。他仔细地看着球洞附近，环顾四周，然后跟青蛙说：“你再把那只青蛙拿出来！”
-
-### translation(chatgpt) of input sentence:
-Please write a joke about the United States.
-
-### response of translation(chatgpt):
-
-Why did the Statue of Liberty always go to the gym? 
-
-So she could stay torch and toned!
-
-### translation(chatgpt) of response:
-
-自由女神像为什么总去健身房呢？
-
-这样她可以保持炬火和调理！
-
-### Example2
-### input sentence： 
+input sentence： 
+```sh
 请讲一个关于熊猫的故事
-### direct response:
+```
+direct response:
+```sh
 有一只叫做小熊的熊猫，他生活在中国的大熊猫保护区里。小熊非常喜欢吃竹子，每天都会爬到树上去吃新鲜的竹笋。除了吃竹子，小熊最喜欢的事情就是爬树了，他会花很多时间爬到树的顶端，然后欣赏周围的美景。
 
 一天，小熊爬上了一棵非常高的树，在树的顶端，他看到了一群猴子在跳舞。小熊非常兴奋，他也想和猴子一起跳舞。于是他开始跳起了独特的舞蹈，猴子们看到小熊的舞蹈非常好玩，便邀请小熊一起跳舞。
 
 从此以后，小熊和猴子们成为了好朋友，每天都在一起玩耍。小熊也学会了很多新的本领，像爬树、跳舞等等。他变得更加喜欢生活在大熊猫保护区里了，因为这里有很多有趣的动物可以和他交朋友。
-### translation(chatgpt) of input sentence:
+```
+translation (chatgpt) of input sentence:
+```sh
 Please tell a story about pandas.
-### response of translation(chatgpt):
+```
+response of translation (chatgpt):
+```sh
 Once upon a time, in a dense bamboo forest high up in the mountains of China, lived a family of pandas. The mother panda, Ling Ling, was a caring and devoted mother. She had two rambunctious cubs, Mei Mei and Tian Tian, who were always up to some mischief.
 
 One sunny day, the cubs were playing hide-and-seek in the forest when they stumbled upon something strange. It was a bamboo stick, but it wasn't like any other they had seen before. It was shiny and smooth, and it made a strange sound when they tapped it against a tree trunk.
@@ -80,7 +60,10 @@ Despite this, Ling Ling encouraged Tian Tian to keep practicing, telling him tha
 As the family sat together in the forest, they played beautiful melodies on the flute, attracting the attention of other pandas in the area. Soon, their music spread throughout the forest, and other animals came to listen to their beautiful songs.
 
 And that's how the panda family became famous for their musical talents, spreading joy and happiness throughout the forest with their beautiful flute tunes. The end.
-### translation(chatgpt) of response:
+```
+
+translation (chatgpt) of response:
+```sh
 从前，在中国山上的一片茂密的竹林里住着一家熊猫。母熊猫灵灵是一位关心和热爱子女的母亲。她有两只调皮捣蛋的小熊猫，妹妹美美和弟弟田田。
 
 有一天，小熊猫们正在森林里玩捉迷藏，他们偶然发现了一件奇怪的东西。这是一根竹棍，但它不像他们以前看过的任何一根竹棍。它闪闪发光，光滑如镜，并且敲打树干时发出奇怪的声音。
@@ -94,11 +77,17 @@ And that's how the panda family became famous for their musical talents, spreadi
 当一家人欢聚在森林里，演奏出动听的旋律时，吸引了周围其他熊猫的注意。很快，他们的音乐传遍了整个森林，其他动物也过来聆听他们美妙的歌声。
 
 这就是熊猫家族因其音乐才华而享誉全球，通过美妙的笛子旋律在整个森林里传播喜悦和幸福的故事。故事结尾。
+```
 
-### Example3
-### input sentence： 
+### Example 2
+In the following example, when asking questions in English, compared to the answers from questions in Chinese, the answers are better organized, and each one is developed around a subheading.
+
+input sentence： 
+```sh
 请给一个北欧风格的室内装修方案
-### direct response:
+```
+direct response:
+```sh
 1.选择白色或浅色木地板，搭配白色墙面，营造明亮简洁的北欧风格。
 
 2.使用大面积的玻璃窗或门增加室内采光，同时欣赏到室外美景。
@@ -118,9 +107,15 @@ And that's how the panda family became famous for their musical talents, spreadi
 9.北欧风格强调人文情怀，可以根据家庭的需求放置文学读物、音乐器材、艺术作品等等。
 
 10.最后，根据个人喜好和实际情况，进行个性化装饰和布置，让北欧风格更加出色。
-### translation(chatgpt) of input sentence:
+```
+
+translation (chatgpt) of input sentence:
+```sh
 Please provide an interior decoration scheme in Nordic style.
-### response of translation(chatgpt):
+```
+
+response of translation (chatgpt):
+```sh
 Here is an interior decoration scheme in Nordic style:
 
 Color scheme: A Nordic style color scheme usually revolves around neutral colors such as white, beige, grey, and black. Touches of blue, green, and soft pastels can also be used to add some color.
@@ -134,7 +129,10 @@ Lighting: Natural light is an essential part of Nordic style, but artificial lig
 Accessories: Nordic style is about simplicity, so keep accessories minimal. Opt for functional items, such as ceramic pots or glass vases, and always aim for quality, not quantity. It is also typical to bring in sculptural items, floral arrangements and greenery.
 
 Overall, a Nordic style interior decoration scheme is about functionality, simplicity, and naturalness, with an emphasis on quality materials and natural light.
-### translation(chatgpt) of response:
+```
+
+translation (chatgpt) of response:
+```sh
 这是一个北欧风格的室内装饰方案：
 
 色彩方案：北欧风格的色彩方案通常围绕着白色、米色、灰色和黑色这些中性色调展开。还可以使用一些蓝色、绿色和柔和的粉色调来增加一些色彩。
@@ -148,15 +146,21 @@ Overall, a Nordic style interior decoration scheme is about functionality, simpl
 配饰：北欧风格注重简约，因此配饰要尽量简单。选择实用的物品，例如陶瓷花盆或玻璃花瓶，并始终以质量而非数量为目标。也通常会带来雕塑品、花卉装饰和绿植。
 
 总体而言，北欧风格的室内装饰方案注重功能性、简约和自然感，强调优质材料和自然光线。
+```
 
-## code generation
-### Example1
-### input sentence： 
+## Code Generation
+***
+### Example 1
+In the code generation example, the English output used the sklearn package and implemented the required functionality in a more concise and clear way.
+
+input sentence：
+```sh
 请用python实现一个支持向量机算法
-### direct response:
+```
+direct response:
+```sh
 这是一个简单的支持向量机实现，通过SVM进行分类。
 
-```python
 import numpy as np
 
 class SVM:
@@ -194,11 +198,9 @@ class SVM:
     def predict(self, X):
         pred = np.sign(np.dot(X, self.W) - self.b)
         return pred
-```
 
 然后，可以使用如下的方法进行测试：
 
-```python
 import matplotlib.pyplot as plt
 from sklearn.datasets import make_classification
 
@@ -234,12 +236,15 @@ plt.ylabel('X2')
 plt.title('SVM')
 plt.show()
 ```
-### translation(chatgpt) of input sentence:
+translation (chatgpt) of input sentence:
+```sh
 Please implement a Support Vector Machine algorithm using Python.
-### response of translation(chatgpt):
+```
+
+response of translation (chatgpt):
+```sh
 Sure, here's an example implementation of a Support Vector Machine algorithm using Python and the scikit-learn library:
 
-```python
 from sklearn.svm import SVC
 from sklearn.datasets import make_blobs
 from sklearn.model_selection import train_test_split
@@ -263,17 +268,18 @@ y_pred = svm.predict(X_test)
 # Calculate the accuracy of the classifier
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy:.2f}")
-```
 
 In this example, we're generating some random data using the `make_blobs` function from scikit-learn. We're splitting this data into training and testing sets using the `train_test_split` function, and then creating a Support Vector Machine classifier with a linear kernel using the `SVC` class.
 
 We're fitting the classifier to the training data using the `fit` method, and then using the `predict` method to predict the labels of the test data. We're calculating the accuracy of the classifier using the `accuracy_score` function from scikit-learn.
 
 This is just a basic example, but you can modify the code to use different types of kernels or to work with different datasets.
-### translation(chatgpt) of response:
+```
+
+translation (chatgpt) of response:
+```sh
 当然，这里提供一个使用Python和scikit-learn库实现支持向量机算法的例子：
 
-```python
 from sklearn.svm import SVC
 from sklearn.datasets import make_blobs
 from sklearn.model_selection import train_test_split
@@ -297,18 +303,20 @@ y_pred = svm.predict(X_test)
 # 计算分类器的准确度
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy:.2f}")
-```
 
 在这个例子中，我们使用scikit-learn库中的`make_blobs`函数生成一些随机数据。我们使用`train_test_split`函数将这些数据分成训练集和测试集，并使用`SVC`类创建带有线性核的支持向量机分类器。
 
 我们使用`fit`方法将分类器拟合到训练数据上，并使用`predict`方法预测测试数据的标签。我们使用scikit-learn库中的`accuracy_score`函数计算分类器的准确度。
 
 这只是一个基本的例子，但是您可以修改代码来使用不同类型的核函数或操作不同的数据集。
+```
 
-## summarization
-
-### Example1
-### input sentence： 
+## Summarization
+***
+In the following two text summarization examples, the English responses are more concise without deviating from the main topic, meeting the requirement of brevity and conciseness as needed by the title.
+### Example 1
+input sentence：
+```sh
 请根据以下内容生成一个标题：人民网北京4月17日电 （记者鲁婧）近日，交通运输部办公厅印发5件更贴近民生实事工作方案的通知。其中，《2023年持续提升适老化无障碍交通出行服务工作方案》（以下简称《方案》）指出，将扩大出租汽车电召和网约车“一键叫车”服务覆盖面，新打造敬老爱老城市公共汽电车线路1000条。开展城市轨道交通“爱心预约”乘车服务，通过微信公众号、小程序等渠道为老年人、残疾人等乘客提供预约服务。
 
 《方案》要求，持续推进城市公共汽电车、城市轨道交通、出租汽车等领域适老化服务提升。同时，做出具体的进度安排：
@@ -322,18 +330,29 @@ print(f"Accuracy: {accuracy:.2f}")
 2023年10月底前，全面完成本省份适老化城市交通出行任务目标。各城市实现城市轨道交通不同运营单位“一次预约、覆盖全网”。督促在本地运营服务的网约车平台公司认真梳理本年度“一键叫车”服务覆盖拓展、功能完善等相关工作情况，形成报告报交通运输部。
 
 2023年11月底前，各省级交通运输主管部门组织总结评估本省份适老化城市交通出行工作经验和成效，交通运输部将组织宣传推广各地典型经验做法。
-### direct response:
+```
+direct response:
+```sh
 交通部印发《2023年持续提升适老化无障碍交通出行服务工作方案》：扩大出租、网约车一键叫车，新打造敬老爱老公交线路1000条
-### translation(chatgpt) of input sentence:
+```
+
+translation (chatgpt) of input sentence:
+```sh
 Please generate a title according to the following content: People's Daily, Beijing, April 17th (Reporter Lu Jing)- Recently, the General Office of the Ministry of Transport has issued 5 notices on working plans that are closer to the needs of people's livelihoods. Among them, the "2023 Plan for Continuous Enhancement of Aging-friendly and Barrier-free Transportation Services" (hereinafter referred to as the "Plan") pointed out that the coverage of taxi-hailing and ride-hailing "one-click call" services will be expanded, and 1000 new public transportation routes for senior citizens and disabled people will be established. "Love and Respect for the Elderly" reservation services will be launched on urban rail transit, providing appointment services for elderly and disabled passengers through WeChat public accounts, mini-programs, and other channels.
-### response of translation(chatgpt):
+```
+response of translation (chatgpt):
+```sh
 Ministry of Transport Issues "2023 Plan for Continuous Enhancement of Aging-friendly and Barrier-free Transportation Services"
-### translation(chatgpt) of response:
+```
+
+translation (chatgpt) of response:
+```sh
 交通部发布“2023年老年友好和无障碍交通服务持续改进计划”。
+```
 
-
-### Example2
-### input sentence： 
+### Example 2
+input sentence：
+```sh
 请根据以下内容生成一个标题：人民网北京4月17日电 （记者杨磊）4月17日上午，中国篮协召开媒体通气会。会上，中国篮协副主席徐济成宣读了中国篮协纪律与道德委员会对“上海久事队”“苏州肯帝亚队”的处罚决定，并回答了记者提问。
 
 由于在本赛季CBA联赛季后赛12进8阶段两场比赛中存在消极比赛的情况，中国篮协决定取消上海久事队和苏州肯帝亚队本赛季比赛名次和参赛资格，对两家俱乐部各核减联赛经费500万元。同时，分别对上海久事队主教练李春江、苏州肯帝亚队主教练李楠做出终止教练员资格5年和3年的处罚，江苏肯帝亚俱乐部总经理史琳杰和上海久事俱乐部总经理蒋育生分别限制从事篮球相关活动5年和3年。
@@ -343,9 +362,13 @@ Ministry of Transport Issues "2023 Plan for Continuous Enhancement of Aging-frie
 CBA公司首席执行官张雄在接受媒体采访时表示，对两支俱乐部及相关人员的处罚，是依据中国篮球协会纪律准则和处罚规定及CBA联赛纪律准则，依据调查事实及违规违纪行为的严重程度，及被处罚对象对该行为的认识等综合情况进行考量，最终做出的处罚决定。
 
 中国篮协主席姚明表示：这两支队伍都是历史悠久的球队，江苏队的历史可以追溯到联赛元年，两队都诞生过里程碑式的人物，越说到这些，我们越觉得痛心。对体育比赛而言，最重要的是信誉而不是能力，这件事给我们的教训是深刻的，需要通过这起事件，来改变一些东西，使这些付出的代价更有价值。
-### direct response:
+```
+direct response:
+```sh
 中国篮协取消“上海久事队”“苏州肯帝亚队”的本赛季比赛名次和参赛资格，并做出相关处罚决定
-### translation(chatgpt) of input sentence:
+```
+translation (chatgpt) of input sentence:
+```sh
 Please generate a title based on the following content: 
 
 CBA Punishes Two Teams and Coaches for "Negative Play" in Playoffs
@@ -355,9 +378,14 @@ On April 17th, the Chinese Basketball Association held a media briefing where th
 As per the original schedule, the second round of this season's CBA playoffs was set to begin that evening with a match-up between Shenzhen Marco Polo and Shanghai Jushilong. However, as a result of the ban, Shenzhen Marco Polo gained an automatic clearance to the semifinals. 
 
 Zhang Xiong, CEO of the CBA, explained that the penalties were in line with the league's disciplinary regulations and depended on the extent and recognition of the violation. Yao Ming, CBA Chairman, also expressed his regret over the punishment, emphasizing the importance of integrity in sports over skill. He hoped that through this event, the league can change for the better and create more valuable outcomes.
-### response of translation(chatgpt):
+```
+response of translation (chatgpt):
+```sh
 CBA Imposes Punishments on Teams and Coaches for Negative Play in Playoffs
-### translation(chatgpt) of response:
+```
+translation (chatgpt) of response:
+```sh
 CBA在季后赛中对队伍和教练实施惩罚以惩处负面比赛行为。
+```
 
 

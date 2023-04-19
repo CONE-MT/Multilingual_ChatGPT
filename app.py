@@ -251,9 +251,8 @@ if __name__ == '__main__':
 
     print("source_lang_name: {} target_lang_name: {} source_lang: {} target_lang: {}".format(source_lang_name, target_lang_name, source_lang, target_lang))
     output_root = config["output_root"]
-    is_trans = config["is_trans"]
-    is_chatgpt = config["is_chatgpt"]
-    is_chatgpt = config["is_chatgpt"]
+    is_trans = True
+    is_chatgpt = True
     split_sentence = config["split_sentence"]
     response_trans = config["response_trans"]
     os.system("mkdir -p {}".format(output_root))

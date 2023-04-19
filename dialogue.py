@@ -98,8 +98,8 @@ if __name__ == '__main__':
     source_lang = name2langid[source_lang_name]
     target_lang = name2langid[target_lang_name]
 
-    is_trans = config["is_trans"]
-    is_chatgpt = config["is_chatgpt"]
+    is_trans = True
+    is_chatgpt = True
     response_trans = config["response_trans"]
 
     while True:

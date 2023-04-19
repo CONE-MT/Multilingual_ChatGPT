@@ -1,4 +1,4 @@
-# Multilingual ChatGPT demo
+# Multilingual ChatGPT
 
 This is a simple ChatGPT demo that supports multilingual speech. We support both speech and text input. For speech data, we use [Recorder.js](https://github.com/mattdiamond/Recorderjs) to record the speech data in the frontend and send it to the backend. Then the speech will be converted to text using [Whisper](https://github.com/openai/whisper).
 Our backend will call our multilingual translation service to support languages that are not supported or not proficient in ChatGPT and translate them into English. Then we will use [ChatGPT API](https://platform.openai.com/docs/guides/chat) to get the reply.
@@ -12,6 +12,11 @@ first translate source languages into English, which are then processed by ChatG
 responses are translated back into the source languages. Moreover, we employ the Whisper model to convert speech into text, 
 thereby extending our service to support voice input. This innovative approach aims to enhance the accessibility and applicability 
 of ChatGPT across a wider range of languages and modalities.
+
+The following is a simple example demonstrating how to use our demo. 
+At the same time, you can see that when ChatGPT creates content using English on the left, 
+the generated content is richer compared to the answers obtained from directly asking in Chinese on the right. 
+You can check out [more examples](#Example).
 
 ![demo](./image/demo.gif)
 
@@ -50,18 +55,19 @@ scoop install ffmpeg
 If you don't have ChatGPT API keys, please click <a href="https://platform.openai.com/">this link</a> to apply.
 
 Before starting the service, You can adjust the configuration file(config.yml) yourself and modify the following parameters.
+
+For "source_lang" and "target_lang", you can select from [our supported languages](./doc/supported_languages.md). Notice: please use full language name.
 ```sh
-app_name: "Multilingual Speech ChatGPT demo"
+app_name: "Multilingual ChatGPT"
 API_KEY: "123"   # your OpenAI ChatGPT API key
 source_lang: "chinese"  # the source languages for translation service
 target_lang: "english"  # the target languages for translation service
 output_root: "./cache"  # the local address for backend-generated files
-is_trans: True  # whether to open the translation function
-is_chatgpt: True  # whether to open the ChatGPT function
 split_sentence: True # whether to split long text to sentences when translating (currently only support Chinese and English)
 response_trans: chatgpt # This parameter can adjust the translation method of the response for command line version, with three options: "prompt": add a prompt after the input text to request ChatGPT to reply in the specified language, "cone": use CONE translation service to translate ChatGPT's response, and "chatgpt": use a translation prompt to let ChatGPT translate into the specified language.
 ```
 
+### Web Interface
 Start the backend.
 ```sh
 python app.py
@@ -79,6 +85,7 @@ as well as decide whether to use the translation service to convert your input t
 
 [Service Tutorial with translation](./doc/with_translation.md)
 
+### Command Line
 We also provide a simple command line version (keyboard input only). You still need to set your parameters in the configuration file(config.yml).
 
 service without translation
@@ -91,11 +98,6 @@ python dialogue.py  --translate
 ```
 Here is [a simple example](./doc/command_line_case.md) using command line version.
 
-
-
-## Supported Languages:
-The following are the currently supported languages:
-[supported languages](./doc/supported_languages.md)
 
 ## Example
 

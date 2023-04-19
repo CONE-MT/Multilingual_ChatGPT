@@ -1,9 +1,7 @@
-app_name: "Multilingual Speech ChatGPT demo"
+app_name: "Multilingual ChatGPT"
 API_KEY: "123"   # your OpenAI ChatGPT API key
 source_lang: "chinese"  # the source languages for translation service
 target_lang: "english"  # the target languages for translation service
 output_root: "./cache"  # the local address for backend-generated files
-is_trans: True  # whether to open the translation function
-is_chatgpt: True  # whether to open the ChatGPT function
 split_sentence: True # whether to split long text to sentences when translating (currently only support Chinese and English)
 response_trans: chatgpt # This parameter can adjust the translation method of the response for command line version, with three options: "prompt": add a prompt after the input text to request ChatGPT to reply in the specified language, "cone": use CONE translation service to translate ChatGPT's response, and "chatgpt": use a translation prompt to let ChatGPT translate into the specified language.
