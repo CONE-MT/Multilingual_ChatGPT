@@ -1,0 +1,10 @@
+Flask==2.2.3
+requests==2.28.2
+numpy==1.23.5
+openai==0.27.2
+openai-whisper==20230314
+spacy==3.5.2
+spacy-legacy==3.0.12
+spacy-loggers==1.0.4
+spacy-pkuseg==0.0.32
+PyYAML==6.0

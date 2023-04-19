@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Recorder.js demo with record, stop and pause - addpipe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+    
+  </head>
+  <body>
+    <h1>Multilingual ChatGPT</h1>
+
+<!--    <h3>Submit OpenAI ChatGPT API Key</h3>-->
+
+<!--    <p>Please fill in your OpenAI ChatGPT API keys in the following input box in order to successfully access our services.-->
+<!--      The API key you submit will be saved on your backend to access the ChatGPT service.-->
+<!--    If a window pops up saying "Submission successful," it means the information has been submitted correctly.-->
+<!--    If you don't have ChatGPT API keys, please click <a href="https://platform.openai.com/">this link</a> to apply.-->
+<!--</p>-->
+<!--    <div id="input">-->
+<!--    <label for="API_key">Your OpenAI API keys：</label>-->
+<!--    <input type="password" id="API_key">-->
+<!--    <button onclick="sendCredentials()">Submit API Key</button>-->
+<!--    </div>-->
+
+    <h3>Voice Input</h3>
+
+    <p>Click the "Record" button to start speaking, and after clicking the "Stop" button, your voice will be automatically recorded and recognized as text.</p>
+    <div id="controls">
+        speech input:
+  	 <button id="recordButton">Record</button>
+  	 <button id="pauseButton" disabled>Pause</button>
+  	 <button id="stopButton" disabled>Stop and Recognize</button>
+    </div>
+    <div id="formats">Format: start recording to see sample rate</div>
+      <div>
+        <audio id="audio-player" controls></audio>
+      </div>
+
+    <h3>Dialogue</h3>
+
+    <p>The recognized text will be displayed in the input box below, and you can also manually adjust or enter new text in the input box.</p>
+    <p>In the right sidebar, you can click on "ChatGPT Dialogue" to directly start a conversation with ChatGPT.</p>
+    <p>In the left sidebar, you can choose to translate your input into your desired language before submitting it to ChatGPT.
+      You can either click on "Translate (CONE)" to use our provided multilingual translation service or click on "Translate (ChatGPT)" to obtain translation results from ChatGPT.
+      The translated content will appear in the "translation text" section. You can also adjust the translation results yourself, and then click "ChatGPT Dialogue" to start a conversation with ChatGPT.
+      The content returned by ChatGPT will appear in the "ChatGPT response text" section.
+      You can also choose to use translation services to translate the ChatGPT response into your input language, and the "translation of ChatGPT response text" will display the corresponding translation.</p>
+  <div class="input-container">
+
+
+    <div class="input-group">
+      <h4>Service with Translation</h4>
+      <label for="input_text">input text：</label>
+      <br>
+      <textarea id="input_text"></textarea>
+      <br>
+      <button onclick="GetTransText('input_text', 'translation_text', false, 'cone')">Translate (CONE)</button>
+      <button onclick="GetTransText('input_text', 'translation_text', false, 'chatgpt')">Translate (ChatGPT)</button>
+      <br>
+    </div>
+
+    <div class="input-group">
+      <h4>Service without Translation</h4>
+      <label for="input_text_2">input text：</label>
+      <br>
+      <textarea id="input_text_2"></textarea>
+      <br>
+      <button onclick="GetChatgptText()">ChatGPT Dialogue</button>
+      <br>
+    </div>
+  </div>
+
+      <br>
+
+  <div class="input-container">
+    <div class="input-group">
+      <label for="translation_text">translation text：</label>
+      <br>
+      <textarea id="translation_text"></textarea>
+      <br>
+      <button onclick="GetChatgptText('translation_text', 'chat_text', false, false)">ChatGPT Dialogue</button>
+      <br>
+    </div>
+
+    <div class="input-group">
+    <label for="chat_text_2">ChatGPT response text：</label>
+    <br>
+    <textarea id="chat_text_2"></textarea>
+    <br>
+    </div>
+  </div>
+
+          <br>
+
+
+    <label for="chat_text">ChatGPT response text：</label>
+    <br>
+    <textarea id="chat_text"></textarea>
+    <br>
+<!--    <button onclick="GetTransText('chat_text', 'chat_translation_text', true, 'cone', true)">Translate (CONE)</button>-->
+    <button onclick="GetTransText('chat_text', 'chat_translation_text', true, 'chatgpt', true)">Translate (ChatGPT)</button>
+    <br>
+
+          <br>
+
+    <label for="chat_translation_text">translation of ChatGPT response text：</label>
+    <br>
+    <textarea id="chat_translation_text"></textarea>
+    <br>
+
+  	<p><strong>History:</strong></p>
+  	<ol id="recordingsList"></ol>
+  	<script src="static/js/recorder.js"></script>
+  	<script src="static/js/app.js"></script>
+  </body>
+</html>
