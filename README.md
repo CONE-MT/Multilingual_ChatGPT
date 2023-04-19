@@ -13,12 +13,15 @@ responses are translated back into the source languages. Moreover, we employ the
 thereby extending our service to support voice input. This innovative approach aims to enhance the accessibility and applicability 
 of ChatGPT across a wider range of languages and modalities.
 
-[//]: # (![demo video]&#40;./image/video_demo.mp4&#41;)
+![demo](./image/demo.gif)
 
-<video width="400" height="240" controls>
-  <source src="./image/video_demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[//]: # (<video width="400" height="240" controls>)
+
+[//]: # (  <source src="./image/video_demo.mp4" type="video/mp4">)
+
+[//]: # (  Your browser does not support the video tag.)
+
+[//]: # (</video>)
 
 ## Setup
 

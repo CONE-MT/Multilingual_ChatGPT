@@ -10,9 +10,9 @@ response of translation(chatgpt): the response from ChatGPT using translation of
 
 translation(chatgpt) of response: translate response of translation using ChatGPT
 ```
-[content creation](#content creation)
+[content creation](#content-creation)
 
-[code generation](#code generation)
+[code generation](#code-generation)
 
 [summarization](#summarization)
 
