@@ -103,7 +103,7 @@ if __name__ == '__main__':
     response_trans = config["response_trans"]
 
     while True:
-        text = input("You: ")
+        text = input("You:")
         print("\n")
 
         if not args.translate:
