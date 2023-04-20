@@ -72,7 +72,7 @@ python app.py
  
 下图是整个服务的流程：
 
-![pipeline](image/pipeline.png "pipeline")
+![pipeline](image/pipeline_chinese.png "pipeline")
 
 正如在流程图中所示，你可以选择语音输入或者直接文本输入，你也可以决定是否使用翻译服务。
 
