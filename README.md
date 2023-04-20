@@ -81,18 +81,18 @@ Next is the usage pipeline:
 As shown in the flowchart, you can choose between voice input or direct text input, 
 as well as decide whether to use the translation service to convert your input text into the target language before submitting it to ChatGPT for a response.
 
-[Service Tutorial without translation](./doc/without_translation.md)
+[Service Tutorial without Translation](./doc/without_translation.md)
 
-[Service Tutorial with translation](./doc/with_translation.md)
+[Service Tutorial with Translation](./doc/with_translation.md)
 
 ### Command Line
 We also provide a simple command line version (keyboard input only). You still need to set your parameters in the configuration file(config.yml).
 
-service without translation
+Service without translation
 ```sh
 python dialogue.py
 ```
-service with translation
+Service with translation
 ```sh
 python dialogue.py  --translate
 ```
@@ -101,7 +101,7 @@ Here is [a simple example](./doc/command_line_case.md) using command line versio
 
 ## Example
 
-we tested whether the answers obtained by translating the text from the source language into English and then asking ChatGPT would be better than using the original text directly.
+We tested whether the answers obtained by translating the text from the source language into English and then asking ChatGPT would be better than using the original text directly.
 
 Here are the evaluation results on Chinese: [case](./doc/chinese_test.md)
 

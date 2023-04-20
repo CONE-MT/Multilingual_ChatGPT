@@ -1,39 +1,43 @@
 # Case
+We tested the difference of asking questions in Chinese and in English for three tasks: 
+text generation, code generation, and text summarization.
 ```
-input sentence: request text
+## the meaning of each part in examples
 
-direct response: the response from ChatGPT using input sentence as input
+Input sentence: request text
 
-translation (chatgpt) of input sentence: translate input sentence using ChatGPT
+Direct response: the response from ChatGPT using input sentence as input
 
-response of translation (chatgpt): the response from ChatGPT using translation of input sentence as input
+Translation (chatgpt) of input sentence: translate input sentence using ChatGPT
 
-translation (chatgpt) of response: translate response of translation using ChatGPT
+Response of translation (chatgpt): the response from ChatGPT using translation of input sentence as input
+
+Translation (chatgpt) of response: translate response of translation using ChatGPT
 ```
-[content creation](#Content-Creation)
+[Text Creation](#Text-Creation)
 
-[code generation](#Code-Generation)
+[Code Generation](#Code-Generation)
 
-[summarization](#Summarization)
+[Summarization](#Summarization)
 
 It is easy to see that when we use English as the input for generation, 
 we can get more detailed content creation, 
 as well as more concise and precise code implementation and text summarization.
 
-[cases (excel version)](./case.xlsx)
+[Cases (excel version)](./case.xlsx)
 
 
-## Content Creation
+## Text Creation
 
 ***
 ### Example 1
 In the following example, when asking questions in English, the story plot is richer compared to the answers from questions in Chinese.
 
-input sentence： 
+Input sentence： 
 ```
 请讲一个关于熊猫的故事
 ```
-direct response:
+Direct response:
 ```
 有一只叫做小熊的熊猫，他生活在中国的大熊猫保护区里。小熊非常喜欢吃竹子，每天都会爬到树上去吃新鲜的竹笋。除了吃竹子，小熊最喜欢的事情就是爬树了，他会花很多时间爬到树的顶端，然后欣赏周围的美景。
 
@@ -41,11 +45,11 @@ direct response:
 
 从此以后，小熊和猴子们成为了好朋友，每天都在一起玩耍。小熊也学会了很多新的本领，像爬树、跳舞等等。他变得更加喜欢生活在大熊猫保护区里了，因为这里有很多有趣的动物可以和他交朋友。
 ```
-translation (chatgpt) of input sentence:
+Translation (chatgpt) of input sentence:
 ```
 Please tell a story about pandas.
 ```
-response of translation (chatgpt):
+Response of translation (chatgpt):
 ```
 Once upon a time, in a dense bamboo forest high up in the mountains of China, lived a family of pandas. The mother panda, Ling Ling, was a caring and devoted mother. She had two rambunctious cubs, Mei Mei and Tian Tian, who were always up to some mischief.
 
@@ -62,7 +66,7 @@ As the family sat together in the forest, they played beautiful melodies on the 
 And that's how the panda family became famous for their musical talents, spreading joy and happiness throughout the forest with their beautiful flute tunes. The end.
 ```
 
-translation (chatgpt) of response:
+Translation (chatgpt) of response:
 ```
 从前，在中国山上的一片茂密的竹林里住着一家熊猫。母熊猫灵灵是一位关心和热爱子女的母亲。她有两只调皮捣蛋的小熊猫，妹妹美美和弟弟田田。
 
@@ -82,11 +86,11 @@ translation (chatgpt) of response:
 ### Example 2
 In the following example, when asking questions in English, compared to the answers from questions in Chinese, the answers are better organized, and each one is developed around a subheading.
 
-input sentence： 
+Input sentence： 
 ```
 请给一个北欧风格的室内装修方案
 ```
-direct response:
+Direct response:
 ```
 1.选择白色或浅色木地板，搭配白色墙面，营造明亮简洁的北欧风格。
 
@@ -109,12 +113,12 @@ direct response:
 10.最后，根据个人喜好和实际情况，进行个性化装饰和布置，让北欧风格更加出色。
 ```
 
-translation (chatgpt) of input sentence:
+Translation (chatgpt) of input sentence:
 ```
 Please provide an interior decoration scheme in Nordic style.
 ```
 
-response of translation (chatgpt):
+Response of translation (chatgpt):
 ```
 Here is an interior decoration scheme in Nordic style:
 
@@ -131,7 +135,7 @@ Accessories: Nordic style is about simplicity, so keep accessories minimal. Opt 
 Overall, a Nordic style interior decoration scheme is about functionality, simplicity, and naturalness, with an emphasis on quality materials and natural light.
 ```
 
-translation (chatgpt) of response:
+Translation (chatgpt) of response:
 ```
 这是一个北欧风格的室内装饰方案：
 
@@ -153,11 +157,11 @@ translation (chatgpt) of response:
 ### Example 1
 In the code generation example, the English output used the sklearn package and implemented the required functionality in a more concise and clear way.
 
-input sentence：
+Input sentence：
 ```
 请用python实现一个支持向量机算法
 ```
-direct response:
+Direct response:
 ```
 这是一个简单的支持向量机实现，通过SVM进行分类。
 
@@ -236,12 +240,12 @@ plt.ylabel('X2')
 plt.title('SVM')
 plt.show()
 ```
-translation (chatgpt) of input sentence:
+Translation (chatgpt) of input sentence:
 ```
 Please implement a Support Vector Machine algorithm using Python.
 ```
 
-response of translation (chatgpt):
+Response of translation (chatgpt):
 ```
 Sure, here's an example implementation of a Support Vector Machine algorithm using Python and the scikit-learn library:
 
@@ -276,7 +280,7 @@ We're fitting the classifier to the training data using the `fit` method, and th
 This is just a basic example, but you can modify the code to use different types of kernels or to work with different datasets.
 ```
 
-translation (chatgpt) of response:
+Translation (chatgpt) of response:
 ```
 当然，这里提供一个使用Python和scikit-learn库实现支持向量机算法的例子：
 
@@ -315,7 +319,7 @@ print(f"Accuracy: {accuracy:.2f}")
 ***
 In the following two text summarization examples, the English responses are more concise without deviating from the main topic, meeting the requirement of brevity and conciseness as needed by the title.
 ### Example 1
-input sentence：
+Input sentence：
 ```
 请根据以下内容生成一个标题：人民网北京4月17日电 （记者鲁婧）近日，交通运输部办公厅印发5件更贴近民生实事工作方案的通知。其中，《2023年持续提升适老化无障碍交通出行服务工作方案》（以下简称《方案》）指出，将扩大出租汽车电召和网约车“一键叫车”服务覆盖面，新打造敬老爱老城市公共汽电车线路1000条。开展城市轨道交通“爱心预约”乘车服务，通过微信公众号、小程序等渠道为老年人、残疾人等乘客提供预约服务。
 
@@ -331,27 +335,27 @@ input sentence：
 
 2023年11月底前，各省级交通运输主管部门组织总结评估本省份适老化城市交通出行工作经验和成效，交通运输部将组织宣传推广各地典型经验做法。
 ```
-direct response:
+Direct response:
 ```
 交通部印发《2023年持续提升适老化无障碍交通出行服务工作方案》：扩大出租、网约车一键叫车，新打造敬老爱老公交线路1000条
 ```
 
-translation (chatgpt) of input sentence:
+Translation (chatgpt) of input sentence:
 ```
 Please generate a title according to the following content: People's Daily, Beijing, April 17th (Reporter Lu Jing)- Recently, the General Office of the Ministry of Transport has issued 5 notices on working plans that are closer to the needs of people's livelihoods. Among them, the "2023 Plan for Continuous Enhancement of Aging-friendly and Barrier-free Transportation Services" (hereinafter referred to as the "Plan") pointed out that the coverage of taxi-hailing and ride-hailing "one-click call" services will be expanded, and 1000 new public transportation routes for senior citizens and disabled people will be established. "Love and Respect for the Elderly" reservation services will be launched on urban rail transit, providing appointment services for elderly and disabled passengers through WeChat public accounts, mini-programs, and other channels.
 ```
-response of translation (chatgpt):
+Response of translation (chatgpt):
 ```
 Ministry of Transport Issues "2023 Plan for Continuous Enhancement of Aging-friendly and Barrier-free Transportation Services"
 ```
 
-translation (chatgpt) of response:
+Translation (chatgpt) of response:
 ```
 交通部发布“2023年老年友好和无障碍交通服务持续改进计划”。
 ```
 
 ### Example 2
-input sentence：
+Input sentence：
 ```
 请根据以下内容生成一个标题：人民网北京4月17日电 （记者杨磊）4月17日上午，中国篮协召开媒体通气会。会上，中国篮协副主席徐济成宣读了中国篮协纪律与道德委员会对“上海久事队”“苏州肯帝亚队”的处罚决定，并回答了记者提问。
 
@@ -363,11 +367,11 @@ CBA公司首席执行官张雄在接受媒体采访时表示，对两支俱乐�
 
 中国篮协主席姚明表示：这两支队伍都是历史悠久的球队，江苏队的历史可以追溯到联赛元年，两队都诞生过里程碑式的人物，越说到这些，我们越觉得痛心。对体育比赛而言，最重要的是信誉而不是能力，这件事给我们的教训是深刻的，需要通过这起事件，来改变一些东西，使这些付出的代价更有价值。
 ```
-direct response:
+Direct response:
 ```
 中国篮协取消“上海久事队”“苏州肯帝亚队”的本赛季比赛名次和参赛资格，并做出相关处罚决定
 ```
-translation (chatgpt) of input sentence:
+Translation (chatgpt) of input sentence:
 ```
 Please generate a title based on the following content: 
 
@@ -379,11 +383,11 @@ As per the original schedule, the second round of this season's CBA playoffs was
 
 Zhang Xiong, CEO of the CBA, explained that the penalties were in line with the league's disciplinary regulations and depended on the extent and recognition of the violation. Yao Ming, CBA Chairman, also expressed his regret over the punishment, emphasizing the importance of integrity in sports over skill. He hoped that through this event, the league can change for the better and create more valuable outcomes.
 ```
-response of translation (chatgpt):
+Response of translation (chatgpt):
 ```
 CBA Imposes Punishments on Teams and Coaches for Negative Play in Playoffs
 ```
-translation (chatgpt) of response:
+Translation (chatgpt) of response:
 ```
 CBA在季后赛中对队伍和教练实施惩罚以惩处负面比赛行为。
 ```

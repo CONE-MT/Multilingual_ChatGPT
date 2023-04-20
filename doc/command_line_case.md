@@ -1,4 +1,4 @@
-**without translation：**
+**Without translation：**
 ```
 You: 请创作一篇关于保护环境的故事
 
@@ -13,7 +13,7 @@ ChatGPT: 从前有个小村庄，这个村庄周围有美丽的山峦和清澈�
 小明和他的小伙伴们非常开心，他们知道他们所做的一切都是值得的。从此以后，人们开始更加珍惜自己的家园，保护环境成为了每个人的责任。 ThemeData警醒每个人，保护环境，让我们的地球更美好！
 
 ```
-**with translation：**
+**With translation：**
 ```
 You: 请创作一篇关于保护环境的故事
 
