@@ -1,4 +1,5 @@
 # Multilingual ChatGPT
+[中文介绍（README in Chinese)](./README_chinese.md)
 
 This is a simple ChatGPT demo that supports multilingual speech. We support both speech and text input. For speech data, we use [Recorder.js](https://github.com/mattdiamond/Recorderjs) to record the speech data in the frontend and send it to the backend. Then the speech will be converted to text using [Whisper](https://github.com/openai/whisper).
 Our backend will call our multilingual translation service to support languages that are not supported or not proficient in ChatGPT and translate them into English. Then we will use [ChatGPT API](https://platform.openai.com/docs/guides/chat) to get the reply.
