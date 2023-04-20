@@ -54,7 +54,7 @@ scoop install ffmpeg
 ## Usage
 If you don't have ChatGPT API keys, please click <a href="https://platform.openai.com/">this link</a> to apply.
 
-Before starting the service, You can adjust the configuration file(config.yml) yourself and modify the following parameters.
+Before starting the service, You can adjust the configuration file (config.yml) yourself and modify the following parameters.
 
 For "source_lang" and "target_lang", you can select from [our supported languages](./doc/supported_languages.md). Notice: please use full language name.
 ```sh
@@ -86,7 +86,7 @@ as well as decide whether to use the translation service to convert your input t
 [Service Tutorial with Translation](./doc/with_translation.md)
 
 ### Command Line
-We also provide a simple command line version (keyboard input only). You still need to set your parameters in the configuration file(config.yml).
+We also provide a simple command line version (keyboard input only). You still need to set your parameters in the configuration file (config.yml).
 
 Service without translation
 ```sh
