@@ -9,7 +9,7 @@ ChatGPT在各种自然语言任务中取得了显著的成果。然而，由于�
 此外，我们使用Whisper模型将语音转换为文本，从而扩展我们的服务以支持语音输入。
 这种创新方法旨在提高ChatGPT在更广泛的语言和模态范围内的可访问性和适用性。
 
-以下是一个简单的示例，演示如何使用我们的服务。同时，我们额可以看到在故事生成时候，相比于右侧直接用中文向ChatGPT提问，左侧英文提问的结果有更多的故事情节和细节。
+以下是一个简单的示例，演示如何使用我们的服务。同时，我们可以看到在故事生成时候，相比于右侧直接用中文向ChatGPT提问，左侧英文提问的结果有更多的故事情节和细节。
 
 你可以在这里查看[更多例子](#示例).
 
@@ -26,7 +26,6 @@ ChatGPT在各种自然语言任务中取得了显著的成果。然而，由于�
 ## 设置
 
 我们使用Python 3.8运行后端代码，请按照以下步骤安装您的Python环境。
-We used Python 3.8 to run our backend code. Please follow the steps below to install the Python environment.
 
 ```sh
 pip install -r requirements.txt
