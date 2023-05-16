@@ -1,11 +1,14 @@
 # 多语言ChatGPT
 
-这是一个简单的支持多语言的ChatGPT演示。我们支持语音和文本输入。对于语音数据，我们使用 [Recorder.js](https://github.com/mattdiamond/Recorderjs) 在前端录制语音数据并将其发送到后端。然后，将使用 [Whisper](https://github.com/openai/whisper) 将语音转换为文本。
-我们的后端将调用我们的多语言翻译服务，将ChatGPT不支持或不擅长的语言翻译成英语。然后我们将使用 [ChatGPT API](https://platform.openai.com/docs/guides/chat) 获取回复。
-回复也将使用我们的多语言翻译服务翻译回输入语言。另外，一些前端代码参考了[这个代码仓库](https://github.com/addpipe/simple-recorderjs-demo)。
+这是一个支持多语言语音的简单ChatGPT演示。我们同时支持语音和文本输入。
+我们使用[Streamlit](https://streamlit.io/)来构建我们的应用。我们使用来自[这个仓库](https://github.com/stefanrmmr/streamlit_audio_recorder)的代码来接收前端的录音。
+然后，语音会通过[Whisper](https://github.com/openai/whisper)转换为文本。我们的后端将调用我们的多语言翻译服务将识别的文本翻译成英文。
+最后我们将使用[ChatGPT API](https://platform.openai.com/docs/guides/chat)来获取回复。回复也将通过我们的多语言翻译服务翻译回输入的语言。
+
+
 ## 动机
 ChatGPT在各种自然语言任务中取得了显著的成果。然而，由于训练数据主要来源于英语，ChatGPT对许多其他语言的支持仍然有限甚至不存在。
-为了解决这个问题，我们将我们的翻译服务CONE与ChatGPT结合起来，首先将源语言翻译成英语，然后由ChatGPT处理。随后，将ChatGPT的回应翻译回源语言。
+为了解决这个问题，我们将我们的翻译服务与ChatGPT结合起来，首先将源语言翻译成英语，然后由ChatGPT处理。随后，将ChatGPT的回应翻译回源语言。
 此外，我们使用Whisper模型将语音转换为文本，从而扩展我们的服务以支持语音输入。
 这种创新方法旨在提高ChatGPT在更广泛的语言和模态范围内的可访问性和适用性。
 
@@ -65,7 +68,7 @@ response_trans: chatgpt # 此参数可调整命令行版本翻译ChatGPT回复�
 ### 网页端
 启动后端服务
 ```sh
-python app.py
+streamlit run st_app_main.py
 ```
 请在浏览器中输入IP地址。如果你的浏览器无法正确显示，请尝试使用Chrome浏览器。
  

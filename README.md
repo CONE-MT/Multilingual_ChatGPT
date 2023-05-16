@@ -1,14 +1,16 @@
 # Multilingual ChatGPT
 [中文介绍（README in Chinese)](./README_chinese.md)
 
-This is a simple ChatGPT demo that supports multilingual speech. We support both speech and text input. For speech data, we use [Recorder.js](https://github.com/mattdiamond/Recorderjs) to record the speech data in the frontend and send it to the backend. Then the speech will be converted to text using [Whisper](https://github.com/openai/whisper).
-Our backend will call our multilingual translation service to support languages that are not supported or not proficient in ChatGPT and translate them into English. Then we will use [ChatGPT API](https://platform.openai.com/docs/guides/chat) to get the reply.
-The reply will also be translated back to the input language using our multilingual translation service. In addition, some frontend code refers to [this repository](https://github.com/addpipe/simple-recorderjs-demo).
+This is a simple ChatGPT demo that supports multilingual speech. We support both speech and text input. We use [Streamlit](https://streamlit.io/) to build our app. 
+We use code from [this repository](https://github.com/stefanrmmr/streamlit_audio_recorder) to accept recordings from the frontend.
+Then the speech will be converted to text using [Whisper](https://github.com/openai/whisper).
+Our backend will call our multilingual translation service to translate recognized text into English. Then we will use [ChatGPT API](https://platform.openai.com/docs/guides/chat) to get the reply.
+The reply will also be translated back to the input language using our multilingual translation service.
 
 ## Motivation
 ChatGPT has achieved remarkable results in various natural language tasks. However, due to the training data being 
 primarily sourced from English, ChatGPT's support for many other languages 
-remains limited or even nonexistent. To address this issue, we integrate our translation service, CONE, with ChatGPT to 
+remains limited or even nonexistent. To address this issue, we integrate our translation service with ChatGPT to 
 first translate source languages into English, which are then processed by ChatGPT. Subsequently, ChatGPT's 
 responses are translated back into the source languages. Moreover, we employ the Whisper model to convert speech into text, 
 thereby extending our service to support voice input. This innovative approach aims to enhance the accessibility and applicability 
@@ -71,7 +73,7 @@ response_trans: chatgpt # This parameter can adjust the translation method of th
 ### Web Interface
 Start the backend.
 ```sh
-python app.py
+streamlit run st_app_main.py
 ```
 Enter the running domain in the browser. If your browser is unable to display correctly, please try using Chrome
  

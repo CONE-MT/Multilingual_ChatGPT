@@ -8,3 +8,4 @@ spacy-legacy==3.0.12
 spacy-loggers==1.0.4
 spacy-pkuseg==0.0.32
 PyYAML==6.0
+streamlit==1.22.0
