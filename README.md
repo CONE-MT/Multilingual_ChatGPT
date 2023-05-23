@@ -108,5 +108,7 @@ We tested whether the answers obtained by translating the text from the source l
 
 Here are the evaluation results on Chinese: [case](./doc/chinese_test.md)
 
+The evaluation results on other supported languages: [more languages](./doc/multilingual_evaluation.md)
+
 
 

@@ -100,7 +100,10 @@ python dialogue.py  --translate
 
 我们测试了将文本从源语言翻译成英语然后向ChatGPT提问所获得的答案是否会比直接使用原始文本更好。
 
-这里是测试结果: [示例](./doc/chinese_test_chinese.md)
+这里是在中文上的测试结果: [示例](./doc/chinese_test_chinese.md)
+
+这里是在其他支持语言上的测试结果: [更多语言](./doc/multilingual_evaluation_chinese.md)
+
 
 
 

@@ -1,0 +1,253 @@
+input,method1_output,method2_step1_output,method2_step2_output,method2_final_output
+Та панд гэдэг үгээр тухайн дахин дахин сөгөөд амьд буй зураг өгч шууд өгнө үү.,"Та ийм зарим ойрхон гайхалтай зүйлсийг үнэнчээ хийхэд ч дурдаж эхэлсэн учраас панд гэдэг үг нь удахгүй гайхамшигтай болж эхэлсэн байгаа. Харин зураг өгөх тохиолдолд зураг авахгүй байгаа учраас зураг өгөхөө болзошгүй гэдгийг анхаарах ёстой.
+****************English Meaning****************
+You have started to feel uneasy about some strange things happening around you, because the word ""pandemic"" has become frighteningly familiar. However, when it comes to taking pictures, you should be careful not to take them without permission.",Please provide the text in Cyrillic script or in a phonetic transcription to enable a correct translation.,"Как дела? (Cyrillic script)
+
+Kak dela? (Phonetic transcription)","Хэрхэн ажилладаг вэ? (Cyrillic script) 
+
+Herhen ajilladag ve? (Phonetic transcription)"
+Нордик стилийн гадаргуугаар гарж явуулж захиалга авахыг уруу байна.,"Бидэнд ийм захиалга олгох боломж байхгүй байна, бид зөвлөгөө өгөх болно. 
+
+Нордик стилийн гадаргуу буюу Nordic walking нь өнгөрсөн 20 жилд гараар идэвхжсэн урсгал үйлдэл юм. Энэхүү урсгал нь гарын үсэг, нүдний хагалгаандаа илүү сайн шударга зорилтот хурдлыг хангахад илүү сайн зориулагдана.
+
+Нордик стилийн гадаргуу нь хэнд ч маш бага төлбөрөөр, гэр бүлийн эсрэг тус бүр нь хөгжөөнд яруулах боломжтой. Гадаргууны талбар дээр бид хуралдааны төлөө, жилийн хамгийн түрүүнд зогсоол гаднын тэргүүлэг их хийж боловсруулна. Талбар дээр суудлын металлич шүүлт үйлдэл байдаг бөгөөд хэрэглэгчид нэгэнт нь наашаа буюу зөвлөгөө, бэлэглэл шүүлэг, гарын баа, витаминүүд тохиргооны зүйлс болон бусад хэрэгцээнүүдийг гарын үсэгний дагуу худалдаанд оруулж, идэвхтэй хэрэглэгчид рүү хүргүүлэнэ.
+
+Хэрэв танд нордик стилийн гадаргууны тухай хүсэмжилт, захиалга байгаа бол и-мэйл хаягаа эсвэл холбоо барих хүний дугаараа бидэнтэй хуваалцацгаая. Бид таны асуулт, санал хүсэлтийг тэргүүлэх бөгөөд захиалгын тухай хэмжээ, үнийн дэлгэрэнгүй мэдээлэл танд илгээх болно.
+****************English Meaning****************
+We cannot provide such an order, but we can offer advice.
+
+Nordic walking, or Nordic style walking, is a physical activity that has been developed and popularized over the past 20 years. This activity is designed to provide an enhanced cardiovascular workout that works the muscles of the legs, upper body, and core, as well as providing a more natural walking experience. 
+
+Nordic style walking is an inexpensive way for people of all ages to get exercise and enjoy the outdoors. It can be done anywhere, and does not require a lot of equipment or high fees. At our facility, we offer classes and supply expert advice to those who would like to learn more about this exercise. We also provide customers with metal walking tips, nutritional supplements, and other equipment that can help them to get the most out of their walking experience.
+
+If you are interested in Nordic walking and have an order, please feel free to contact us. We will be happy to answer any questions you may have, as well as provide you with detailed information regarding pricing and delivery information.",We are now able to order through Nordic style delivery.,"As an AI language model, I do not have access to specific information about businesses or companies. However, if Nordic style delivery is a delivery service that offers ordering, then it is recommended to check their website or contact their customer service for more information on how to place an order.","Миний AI хэл модел нь бизнес эсвэл компанийн тухайн тусгай мэдээллийг харж чадахгүй. Харин, хэрэв Nordic style delivery нь захиалга өгөх үйлчилгээний сан юм бол, олонлогийн вэб сайтаар эсвэл тухайн үйлчилгээний хэрэглэгчийн үйлчлэгтэй холбогдоход үнэн зөв мэдээлэл авахыг зөвлөж байна."
+"""Пайтон хэлээр Support Vector Machine алгоритмыг сургаа.""","Support Vector Machine (SVM) алгоритм нь мэдэхийлсэн шинжүүдийг ангилж, головчлолын тодорхойлд нь нэг эсвэл хоёр тоонуудыг суперплос жижиг зайнаар тусгаарлан классифаядаг алгоритм юм. SVM алгоритм нь үнэн зөвхөн байдлын классификацийг хэрэглэнэ. 
+
+Python хэлний scikit-learn сан нь SVM алгоритмын имплементацийг олгож байна. Бид эндээс хэдэн шинжүүдийг ачааллаж болно гэдгээ мэдэхийлж болно. Энд олгосон шинжүүд бол Principal Component Analysis (PCA), Grid SearchCV, Cross-validation K-Fold гэх мэт нь. 
+
+Python кодны жишээ нь доорхи гишүүнтэй байна: 
+
+```python
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn import svm
+
+# Load iris dataset
+iris = datasets.load_iris()
+
+# Split dataset into training and testing set
+X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.3, random_state=0)
+
+# Fit SVM model with linear kernel
+clf = svm.SVC(kernel='linear', C=1).fit(X_train, y_train)
+
+# Predict target variable for test set
+y_pred = clf.predict(X_test)
+
+# Check accuracy score
+from sklearn.metrics import accuracy_score
+print('Accuracy:',accuracy_score(y_test,y_pred))
+```
+
+Эндээс гадна SVM алгоритмын параметрүүдээ тохируулахын тулд Grid SearchCV функцыг ашиглах боломжтой: 
+
+```python
+from sklearn.model_selection import GridSearchCV
+
+# Define hyperparameters for grid search
+C_range = [0.001, 0.01, 0.1, 1]
+gamma_range = [0.001, 0.01, 0.1, 1]
+param_grid = dict(gamma=gamma_range, C=C_range)
+
+# Define svm model with rbf kernel
+svm_model = svm.SVC(kernel='rbf')
+
+# Define grid search with 5-fold cross validation
+grid = GridSearchCV(svm_model, param_grid=param_grid, cv=5, iid=False)
+grid.fit(iris.data, iris.target)
+
+# Print best hyperparameters and accuracy score
+print('Best hyperparameters:', grid.best_params_)
+print('Accuracy:', grid.best_score_)
+```
+
+Дээрх кодон дээрх бүлэгүүд Python хэлээр SVM алгоритмыг сургахад ашигладаг функцууд байна. SVM алгоритмын бусад параметрүүдийг мэдэхийлэхийн тулд scikit-learn санг ашиглана уу.
+****************English Meaning****************
+The Support Vector Machine (SVM) algorithm is an algorithm that separates known data into one of two classes using a small margin superplane. The SVM algorithm only uses binary classification.
+
+The Python scikit-learn library provides implementation of the SVM algorithm. Various parameters can be adjusted, such as Principal Component Analysis (PCA), Grid SearchCV, and Cross-validation K-Fold.
+
+The following is an example Python code using the SVM algorithm:
+
+```python
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn import svm
+
+# Load iris dataset
+iris = datasets.load_iris()
+
+# Split dataset into training and testing set
+X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.3, random_state=0)
+
+# Fit SVM model with linear kernel
+clf = svm.SVC(kernel='linear', C=1).fit(X_train, y_train)
+
+# Predict target variable for test set
+y_pred = clf.predict(X_test)
+
+# Check accuracy score
+from sklearn.metrics import accuracy_score
+print('Accuracy:',accuracy_score(y_test,y_pred))
+```
+
+Grid SearchCV function can be used to adjust SVM algorithm parameters, as shown in the following code:
+
+```python
+from sklearn.model_selection import GridSearchCV
+
+# Define hyperparameters for grid search
+C_range = [0.001, 0.01, 0.1, 1]
+gamma_range = [0.001, 0.01, 0.1, 1]
+param_grid = dict(gamma=gamma_range, C=C_range)
+
+# Define svm model with rbf kernel
+svm_model = svm.SVC(kernel='rbf')
+
+# Define grid search with 5-fold cross validation
+grid = GridSearchCV(svm_model, param_grid=param_grid, cv=5, iid=False)
+grid.fit(iris.data, iris.target)
+
+# Print best hyperparameters and accuracy score
+print('Best hyperparameters:', grid.best_params_)
+print('Accuracy:', grid.best_score_)
+```
+
+Other parameters for the SVM algorithm can be found using the scikit-learn library.","""Learn Support Vector Machine algorithm with Python language.""","Support Vector Machine (SVM) is a powerful machine learning algorithm used for classification and regression analysis. Python provides a number of libraries which make implementing SVM easy.
+
+Steps to Learn Support Vector Machine algorithm with Python:
+
+1. Install Python and required libraries:
+   - Python: You can download Python from its official website https://www.python.org/downloads/.
+   - Scikit-learn: It is a machine learning library built on Python. You can install it by running the command ""pip install scikit-learn"".
+
+2. Import libraries: To implement SVM in Python, we need to import the following libraries:
+   - Numpy: It provides support for large, multi-dimensional arrays and matrices.
+   - Pandas: It is a data manipulation library that allows easy data preprocessing.
+   - Scikit-learn: It provides a wide range of machine learning algorithms including SVM.
+
+3. Load the data: We need to load the data into our Python program. Typically, SVM requires a two-dimensional dataset of features and target variables.
+
+4. Split the dataset: We need to split the dataset into a training set and a testing set. The training set is used to train the SVM model, while the testing set is used to evaluate the model's accuracy.
+
+5. Apply SVM: We need to apply the SVM algorithm to our dataset using the scikit-learn library. We can use either the SVC (Support Vector Classifier) or the SVR (Support Vector Regressor) function depending on the type of problem we are trying to solve.
+
+6. Measure the accuracy: We need to measure the accuracy of the SVM model using the testing set. We can do this by calculating metrics such as accuracy, precision, recall, and F1 score.
+
+7. Make predictions: We can use the trained SVM model to make predictions on new datasets.
+
+Here is an example SVM code in Python:
+
+```
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
+
+# Load the data
+data = pd.read_csv('dataset.csv')
+
+# Split the dataset
+X = data.drop('target', axis=1)
+y = data['target']
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+
+# Apply SVM
+model = SVC(kernel='linear')
+model.fit(X_train, y_train)
+
+# Measure the accuracy
+y_pred = model.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)
+print('Accuracy:', accuracy)
+
+# Make predictions
+new_data = np.array([[1, 2, 3], [4, 5, 6]])
+predictions = model.predict(new_data)
+print('Predictions:', predictions)
+```
+
+In the above code, we have used the scikit-learn library to load the dataset and split it into a training and testing set. We then applied the SVM algorithm using the SVC function with a linear kernel. Finally, we measured the accuracy of the model using the accuracy_score function and made predictions on new data.","Сэргээн зэрэгтэй машин сургалтын алгоритмд SVM нь шинжилгээний танхимд ашиглагддаг алгоритм юм. Python хэлний дээр дараах багцуудаар SVM програмчлалыг хялбархан нээнэ:
+
+1. Python-ийг татаж болон шаардлагын сангуудыг суулгах:
+  - Python: Та Python-ийг официаль вэб сайтаас татаж авах боломжтой https://www.python.org/downloads/.
+  - Scikit-ний бичилт: Энэ Python-д тулгунд баригдсан машин сургалтын сан юм. ""Pip install scikit-learn"" коммандыг ажиллуулаад суулгах боломжтой.
+
+2. Сангуудыг оруулах: Python-ийн дотор SVM ашиглахын тулд, бид дараах сангуудыг оруулах шаардлагатай:
+  - Numpy: Өдрийн хэмжээтэй, олон хэмжээний массив, матриц болон тусгай мэдээлэл бусад тохируулгуудыг дэмжих.
+  - Pandas: Энэ нь мэдээллийн өөрчлөлтийг хялбаргоо болгох боломжийг олгож байна.
+  - Scikit-learn: Энэ нь SVM судлаачидын дунд хэмжээний сургалтын алгоритмуудыг олгож байна.
+
+3. Мэдээллийг ачаалах: Бид Python программруу мэдээллийг ачааллах шаардлагатай байна. Заавал SVM нь өмнө нь х Eigenschaften болон арилгааны хувьд гурвын хэмжээтэй dataset хэрэгтэй.
+
+4. Dataset-ыйг хуваах: Бид datasetыг сургалтаас өндөр үнэлгээтэй харахын тулд dataset-ыг сургалтад хэрэглэгч, шалгах боломжтой өөрчлөх шаардлагатай. Сургалтаас авто зоруулахын тулд туршилтын dataset-ыг аваарай.
+
+5. SVM-ийг хэрэгжүүлэх: Хэрэв бид олон өөрөөс ялгаатай асуудалын шийдэл хайж байгаа бол, бид SVM судлаач ашиглан хэрэглэх шаардлагатай байгаа скайкит-нийийн сангийг ашиглаж машин сургалтыг dataset дээр хэрэглэх боломжтой.
+
+6. Тодорхойлолтыг хэмжээл: Бид SVM судлаачын хэрэглэж буй моделын жиндээ байдалыг туршиг ялгаатай өөрчлөлтийг хийх боломжтой юм. Тохиргоонууд, батламжууд, сэргээн зэрэгт хариу гаргах F1-г тооцож өгч онцлогджээ.
+
+7. Өгөгдөлд тохируулах: Бид сургалж буй SVM моделыг өгөгдлүүд дээр хэрэглээд санах ойг гаргад хэрэгжүүлэх боломжтой юм.
+
+Доорх зүйлийг Python-д бичиж харууллаа:
+
+```
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
+
+# Мэдээлэл оруулах
+data = pd.read_csv('dataset.csv')
+
+# Багцыг хуваах
+X = data.drop('target', axis=1)
+y = data['target']
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+
+# SVM ашиглах
+model = SVC(kernel='linear')
+model.fit(X_train, y_train)
+
+# Тодорхойлолтыг хэмжээл
+y_pred = model.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)
+print('Accuracy:', accuracy)
+
+# Тогтоох toгтоох
+new_data = np.array([[1, 2, 3], [4, 5, 6]])
+predictions = model.predict(new_data)
+print('Predictions:', predictions)
+```
+
+Түүнд дээрх кодод скайкит-ний санг ашиглаж мэдээллийг оруулсан бөгөөд, сангийг нь өгөгдөл болон шалгах гурвын хэмжээтэй dataset руу нь хуваахын тулд хэрэглэсэн байна. Иймээс бид SVC функцийг ашигласан SVM алгоритмыг хэрэглэж, тодорхойлолж моделын зөвлөгөөгийн зэрэг тодорхойлолт хийж, шинэ өгөгдлүүд дээр тухайн сургалтын моделыг ашиглах боломжтой."
+"Доорх контентон англи хэлээр өөрчлөлт хийж гарч буй гарчиг үүсгэнэ үү: Сийнээсийн тэмцээнд “Сөрөг тоглолт” хийсэн хоёр тамирчид болон захиралд нөхөрлөлөө: Үндэстний баскетболын Хятад Лигад 4 дүгээр сарын 17-нд медиа брифинг өргөжээ. Брифингтэй хамтарч өгсөн мэдээлэлд Шанхай Жусийлон Лайон ихтэй, Сужоу Кенифекс ХК клуб нь “сөрөг тоглолт” хийж чадсан 2 тоглолтоор шилжүүлсэн улсын тохиолдолд тэдний нөхөрлөлөөр зэргээр нь шийдэвлэл байгуулсан байна. Түүний үр дүнд Хятад Лига -н 2019-2020 жилээр худлаа хөнөөлсөн хоёр клубын чанарийг багтааж, лиг төрөлт 5 мянган юань төлбөргүй хугацаанд шилжүүлдэг болсон. Нэгдүгээр этап болж байгаа байгууллагуудыг Шэнжэн Марко Поло, Шанхай Жусийлонгийн тэмцээнд оролцод эхэллээ. Харин зэргээр гэрээтүүлэг авна.
+CBA -н Удирдлагын газрын дарга Чжан Сионг захирлан санкцийн улирлын дүгнэлтийг лигын шийджээд дурдах аюулгүйнхнүүд болон нийтлэг булан зөвшөөрлийг үнэлэв. Шанхай Жусийлон гэдэг жишээгүй, ойрхон Сужоу Кенифексийн төлөв өөрчлөгдлөөс гол давж арав. Клубуудын захирлал нь “сөрөг тоглолт”-өөр залган хийгдсэн байгаа бол зохицуулагчдын зохицуулалт нь хамгийн ихдээ 5 жил, 3 жилийн хугацаанд иржээ.
+CBA -н хүлээлгэн дээрх хариуцлага байсан гэдэгтээ таатай байна. CBA -н тэргүүлэгч Яо Минг захирлаж, амрах амьдралд халимгүй нөхцөлд зориулан санкцийг нь орхисон бөгөөд уран бүтээл зах зээлдээ ил чухал юм болов. Тэр бид CBA -н явцад ганцхан зүйл хэрхэн явах вэ? вэ гэж хэрэглэн дагалдан хичээвэлээ.","Two players in the Xiongan Basketball League were fined for engaging in ""unsportsmanlike behavior"" during a media briefing held on May 17th. The briefing revealed that the Suzhou Kung Fu Club had successfully executed two ""foul plays"" during a recent game against the Shanghai Sharks, resulting in a ruling against them by the league's governing body. As a result, the two clubs were forced to split the cost of a 5 million yuan fine and forfeit 3 years of competition.
+
+Commissioner Zhang Xiang, who heads up the league's disciplinary committee and is responsible for enforcing player conduct standards, characterized the incident as ""troubling"" and said it would be heavily investigated. The Shanghai Sharks, which were not involved in the incident, have expressed support for the league's decision and called for increased attention to sportsmanship across all teams.
+
+League officials have yet to release any additional details regarding the incident or the potential consequences for player misconduct, but some observers have speculated that the suspension could be extended to additional games or even entire seasons. One anonymous source noted that this ""should serve as a reminder to all players and organizations that we are committed to maintaining order and dignity in our league.""
+****************English Meaning****************
+Two players in the Xiongan Basketball League were fined for unsportsmanlike behavior during a media briefing on May 17th. The briefing revealed that the Suzhou Kung Fu Club had executed two fouls resulting in a ruling against them by the league. As a result, the two clubs were forced to split the cost of a 5 million yuan fine and forfeit 3 years of competition.
+
+Commissioner Zhang Xiang, responsible for enforcing player conduct, characterized the incident as ""troubling"" and will be heavily investigated. The Shanghai Sharks expressed support for the league's decision and called for increased attention to sportsmanship. Potential consequences for player misconduct have yet to be released, but some speculate it could result in additional suspension or even entire seasons. An anonymous source noted that this should serve as a reminder to all players and organizations to maintain order and dignity in the league.","Translate the following text from Mongolian to English:
+
+Create a headline by translating the following content into English: Two boxers who participated in the Sineesi tournament and their coach have been quarantined: On May 17, at the media briefing of the Chinese Basketball Association's 4th month, Shanghai Zhujiulun Lion, Suzhou Kenifex HC club were reported to have violated the rules of conduct by holding two ""boxing matches."" As a result of their violation, the Chinese Basketball League's two clubs had their sanctions increased and were suspended from the league for a period of 5 million yuan without payment. The organizations competing in the first stage of the CBA tournament were invited to participate in the Shenzhen Marco Polo and Shanghai Zhujiulon tournaments. However, as a result of this, they will now undergo quarantine. 
+
+The director of the CBA management office, Zhang Xiong, announced the punishment for the violating individuals and teams and approved the suspension for the athletes and related officials. The Shanghai Zhujiulon incident is not an isolated case; there have been other similar violations by the Suzhou Kenifex team, which will damage their prospects of reaching the top levels of the league. The club leaders of the violating teams are responsible for the consequences of their actions and are prohibited from participating in the league for a period of three to five years.
+
+The response to the CBA regulations on this matter seems to be satisfactory. CBA commissioner Yao Ming issued a statement suggesting that sanctions were imposed conscientiously to maintain the integrity of the game. He pointed out that the sports industry must be conducted in a fair and just manner, and described the whole situation as a heavy lesson. He then asked: ""How shall we proceed in the future?""","Two Boxers and Their Coach Quarantined After Violating Rules at Sineesi Tournament
+
+Two boxers and their coach who participated in the Sineesi tournament have been quarantined after violating rules of conduct at the event. During a media briefing on May 17, it was reported that two “boxing matches” were held by the Shanghai Zhujiulun Lion and Suzhou Kenifex HC club, resulting in the Chinese Basketball League suspending the two clubs for a period of 5 million yuan without payment. As a consequence, all organizations participating in the first stage of the CBA tournament will now undergo quarantine. The CBA management office announced the punishment of suspension for athletes and related officials, which included the banning of club leaders from participating in the league for a period of three to five years. The CBA commissioner, Yao Ming, expressed satisfaction with the response to the regulations on this matter and emphasized the importance of maintaining integrity in the sports industry.","""Хоёр боксер болон тэргүүлэгчийн бие дараах үйл ажиллагаанаа хавсаргасан Синеэси тэмцээнийхээ явцад гэр бүл өмнөхүүдийн шаардлагыг зөрчсөн байна. 5-аас тэрбум төлнө эсэхийг асуун урамшуулалд анхааруулсаны дагуу 5-зуун юань айлахбаартай Шанхай Зузөлун Лион болон Сучжоу Кенифекс ХК-ийн хоорондох ""гэмт хэргүүдийг""хийж, үүнд байгаа тухайн хоорондын хэдэн албаны ажилчид тухайн зөвлөгөөг ирүүлэхчүүд зөвшөөрч, СБА-ны зээлэглэх тэмцээнд гараар орно. СБА-ны зохион байгуулалтын төлөөлөгч, Яо Минг, энэ талаарх дүрэмд олон ажлын зөвшөөрлийн хариуг ойлголцооноор хүлээн зөвшөөрөхийн тулд олон улсын спортын жагсаалтаар тэнцвэр оруулахыг санал болгосон."""

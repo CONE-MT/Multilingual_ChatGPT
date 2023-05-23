@@ -4,7 +4,6 @@ multilingual_test.sh
 multilingual_test.py
 dialogue_readfile.py
 doc/multilingual.zip
-doc/multilingual/
 data/
 static/
 index.html

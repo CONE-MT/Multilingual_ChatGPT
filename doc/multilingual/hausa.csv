@@ -1,0 +1,228 @@
+input,method1_output,method2_step1_output,method2_step2_output,method2_final_output
+Da fadin su ka ce kowa ya kawo hikayata game da kwandaba?,"Fadin ya ce haka domin hikayoyi suna kasuwar gobe ko su nuna hannu, da game da kwandaba suna taba tare da ta'addanci a kowace zamani. Domin a cikin hikayoyi, kwandabe na farko ne ko game na farko ne da aka yi daidai a kan farko. Domin haka, kowa ya kawo hikayata game da kwandaba domin kuma samun darussa da kuma tattaunawa wanda za a samu a cikin hanyar tasiri.
+****************English Meaning****************
+The storyteller said this because stories are like market of tomorrow or they indicate the hand, action and movement that have been done at any given time. In stories, the first game or narration is always accompanied by the second game or narration that follows immediately. Therefore, everyone brings their stories and presentations of games and narratives in order to find lessons and discussions that can be found in the impact space.","""What is the significance of the tales of the past to everyone?""","As an AI language model, I do not hold beliefs or opinions, but I can provide an answer based on the general understanding of literature and storytelling.
+
+The tales of the past are significant to everyone because they provide a connection to our history and culture. Through stories, we learn about the traditions, values, beliefs, and struggles of our ancestors. Ancient myths, fables, and legends of a culture reflect its people's imagination and creativity. These tales provide us with valuable lessons about life that are still relevant today. The stories we tell and hear passed down from generations help us understand and make sense of the world around us, and we can derive inspiration, hope, and comfort from them. Moreover, storytelling is an essential part of our identity, and it helps us establish a sense of community and belonging.","Wanda ya fi kashi AI rubutu na turanci, ba mu tabbacin tallafi ko ra'ayoyin ba, amma za mu iya ba da magana game da fahimtar da abubuwa na littafiya da rubutu.
+
+Maganganu daga kasan nan suna da muhimmanci ga duk wanda za a iya gane da ita sabon mangaskiya, sabuwar tsarin zama da kyau. Tafiya ce ta tabbatar da adadin abubuwa, manhajar sada zumunci, ra'ayin da harshenmu da hasashe da jin dadin ilimi a zamaninmu. Manyan matakai na zamanin da aka cancanta ta haɗaɗɗun tsarinmu da kuma masana'antu. Ta samar da mu damar gwagwarmayar tsuntsaye game da rai, wanda yayi nasarar tallafawa har yanzu. Maganganu da muka so da suji sun anfi ta donmu tare da sauƙinmu, kuma mu iya samun buɗe dominmu da iyakance daidai da ita. Kuma, masanayin koyarwa ya zama abu mai kayayyakinmu, wanda ya tabbatar da mu kasafin gaskiya, kuma yana tsararrakinmu ga ƙungiya da daukar nauyi."
+Da fatan za ka ba samun sunayen bankwana a nahiyar Nordic a cikin hanyoyin manyan gida.,"As an AI language model, I am unable to perform speech or go to any physical location, including Nordic regions for bank transactions or inquiries. However, you can check the website or contact customer service of any bank operating in Nordic regions to get information on how to open an account or make inquiries regarding various services and products offered by the bank.
+****************English Meaning****************
+Duk AI rubutu na fassara, ba na iya samun magana ko kusa zuwa wani gida na zangon kamin da ke tsakanin kasuwancin bankin ko aminci. To, za ka iya duba shafin intanet ko kuma haɗin kuma ƙirƙiri uwa da aka samar da kowane bankin da aka samar da amincin a cikin zangon Nordic don samar da bayanai akan yadda za a iya kira akauntina ko samun bayanai wanda aka samu a cikin amincin da kuma damar amfani da su da kuma zirga-zirga.","Hopefully, you will be able to find bank branches in the Nordic region within residential areas.","As an AI language model, I am not capable of browsing maps or websites. However, I can tell you that there are various banks in the Nordic region that have branches in residential areas. Some of the banks include Nordea, Danske Bank, Swedbank, Handelsbanken, SEB, and DNB. You can visit their respective websites or contact their customer service for more information on their branch locations and hours. Additionally, you can use online maps or search engines to find the nearest bank branch to your residential area.","Daga cikin AI fasaha matukar dangane da hukuncin na sayarwa sama da bayanai ko shafukan yanar gizo ba. Amma, zan iya ce matsala akwai masu amfani saboda bankuna na kudancin tattalin arha na Europe ta Noredin, Danske Bank, Swedbank, Handelsbanken, SEB, kuma DNB. Za ka iya ziyarci website na kowane banki ko sanar da mahaifiyar su don bayani game da matattun yawan taron da suka kashe doka. Kuma za ka iya amfani da shafukan yanar gizo ko search engine don samun bankuna mai zafi zuwa gida da kuma ɗari."
+Da fatan za a yin ɓangaren Support Vector Machine ta hanyar Python.,"I sorry, I am an AI language model and I am incapable of providing answers in Hausa language. However, I can provide you with the steps to do Support Vector Machine in Python:
+
+1. Import the necessary libraries:
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn import datasets
+```
+
+2. Load the dataset: 
+```python
+iris = datasets.load_iris()
+X = iris.data[:, :2] # taking the first two features only
+y = iris.target
+```
+
+3. Split the dataset into training and testing sets:
+```python
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)
+```
+
+4. Build the model and fit the data:
+```python
+from sklearn.svm import SVC
+svm = SVC(kernel='linear', C=1, random_state=1)
+svm.fit(X_train, y_train)
+```
+
+5. Make predictions on the test data:
+```python
+y_pred = svm.predict(X_test)
+```
+
+6. Evaluate the accuracy of the model:
+```python
+from sklearn.metrics import accuracy_score
+print('Accuracy: %.2f' % accuracy_score(y_test, y_pred))
+```
+
+These are the basic steps for doing Support Vector Machine in Python. You can modify the code according to your requirements.
+****************English Meaning****************
+I am sorry, I am an AI language model and I am unable to provide answers in Hausa language. However, I can provide you with the steps to perform Support Vector Machine in Python:
+
+1. Import the necessary libraries:
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn import datasets
+```
+
+2. Load the dataset: 
+```python
+iris = datasets.load_iris()
+X = iris.data[:, :2] # taking the first two features only
+y = iris.target
+```
+
+3. Split the dataset into training and testing sets:
+```python
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)
+```
+
+4. Build the model and fit the data:
+```python
+from sklearn.svm import SVC
+svm = SVC(kernel='linear', C=1, random_state=1)
+svm.fit(X_train, y_train)
+```
+
+5. Make predictions on the test data:
+```python
+y_pred = svm.predict(X_test)
+```
+
+6. Evaluate the accuracy of the model:
+```python
+from sklearn.metrics import accuracy_score
+print('Accuracy: %.2f' % accuracy_score(y_test, y_pred))
+```
+
+These are the basic steps for performing Support Vector Machine in Python. You can modify the code according to your requirements.",We will perform the Support Vector Machine algorithm using Python.,"To perform Support Vector Machine (SVM) algorithm in Python, you need to follow the following steps:
+
+1. Import the necessary libraries: Scikit-learn and Numpy
+   ```
+   from sklearn import svm
+   import numpy as np
+   ```
+2. Load your data into two arrays X and y: X contains the features of your data, while y contains the labels.
+    ```
+    X = np.array([[0, 0], [1, 1]])
+    y = np.array([0, 1])
+    ```
+3. Create a SVM classifier by calling svm.SVC() and passing any desired parameters as arguments.
+   ```
+   clf = svm.SVC(kernel='linear')
+   ```
+4. Train the SVM classifier using clf.fit(X, y)
+   ```
+   clf.fit(X, y)
+   ```
+5. Predict the labels of new data points using clf.predict(new_data).
+   ```
+   new_data = np.array([[2., 2.], [-1., -2.]])
+   clf.predict(new_data)
+   ```
+
+Here is an example code for implementing SVM in Python:
+
+```
+from sklearn import svm
+import numpy as np
+
+# Load data
+X = np.array([[0, 0], [1, 1]])
+y = np.array([0, 1])
+
+# Create SVM classifier
+clf = svm.SVC(kernel='linear')
+
+# Train SVM classifier
+clf.fit(X, y)
+
+# Predict labels of new data
+new_data = np.array([[2., 2.], [-1., -2.]])
+predicted_labels = clf.predict(new_data)
+
+print(predicted_labels)
+```
+
+Output:
+
+```
+[1, 0]
+```
+
+In this example, the SVM classifier predicts the label 1 for new data point [2, 2] and label 0 for [-1, -2].","Don koyi amfanin Support Vector Machine (SVM) a Python, kuna buƙatar amfani da mafarki uku: Scikit-learn da Numpy
+
+1. Ƙara mafarki da aka buƙatar: Scikit-learn da Numpy
+   ```
+   from sklearn import svm
+   import numpy as np
+   ```
+2. Sakon data cikin ɗariya biyu X da y: X ya kunshi ayyukan data dai dai, inda y kunshi kalmomi.
+    ```
+    X = np.array([[0, 0], [1, 1]])
+    y = np.array([0, 1])
+    ```
+3. Ƙirƙiri SVM na kira svm.SVC() kuma cika wadannan bayanai sune suka kara biyen argument.
+   ```
+   clf = svm.SVC(kernel='linear')
+   ```
+4. Hada SVM na kara tallafi tare da clf.fit(X, y)
+   ```
+   clf.fit(X, y)
+   ```
+5. Bude kalmomi na sabon data ta amfani da clf.predict(sabon_data).
+   ```
+   sabon_data = np.array([[2., 2.], [-1., -2.]])
+   clf.predict(sabon_data)
+   ```
+
+Wannan shi ne masana code wanda yaɗa ake amfani da SVM a Python:
+
+```
+from sklearn import svm
+import numpy as np
+
+# Sakon data
+X = np.array([[0, 0], [1, 1]])
+y = np.array([0, 1])
+
+# Shirya SVM classifier
+clf = svm.SVC(kernel='linear')
+
+# Hada SVM classifier
+clf.fit(X, y)
+
+# Bude kalmomi na sabon data
+sabon_data = np.array([[2., 2.], [-1., -2.]])
+shawarar_kalmomi = clf.predict(sabon_data)
+
+print(shawarar_kalmomi)
+```
+
+Shirya:
+```
+[1, 0]
+```
+
+A wannan misali, SVM classifier ya ragowa kalmomi 1 don sabon data point [2, 2] kuma kalmomi 0 don [-1, -2]."
+"Da fatan za a taimaka mana wani talla don tarihin katin hakkin rumfa: CBA Ta kashe biyan bukatun daya da kuma biyan Ra'ayin kusan kuma karin yan sanda don ""Tsakanin kwallon"" a bulojin tarihiA ranar 17 ga watan April, Tashar CBA ya gudanar da wani tarihin kungiyun Shanghai Jushilong Lions da Suzhou Kenitex basketball. Kungiyoyin sun kasa tsakanin sakamakon kwallaye na biyu a cikin feshin CBA playoffs. Saboda haka, CBA ta karya tarihin kungiyoyin biyu da ya rinka kuma shirin tashar musamman don shekarar da suka buga da karfe jumlar 5 million yuan. Kuma ma'aikata kungiyoyin sun kasa sakamakon, kuma Li Chunjiang da Li Nan, dawo-dawowa na Shanghai Jushilong da Suzhou Kenitex tare da zunzuran da aka fafata tsari da bakwai da bakwai. Shilinjie, malaman kungiyar Kenitex, kuma Jiang Yusheng, malaman kungiyar Jushilong, sun kasa sakamakon zuwa shekara biyu da uku. Zaka samu bidiyon da aka rabawa, bar na farko na Feshin CBA playoffs don yin inganta na shan daga bangare da Jushilong da Shenzhen Marco Polo. Amma saboda banbancin, Shenzhen Marco Polo ya yafe masa inganta don yin fiye da bakwai. Zhang Xiong, CEO na CBA, ya bayyana cewa karin kara haska ne ta karni da suka taba kira ga ayyuka da suka yi na cewa suke taimaka cewa ba a cikin rashin munka ba. Yao Ming, Chairman na CBA, kuma ya bayyana mai cewa ya sauya da miyagun zama a wasanni a jiya da yau, u ya kuma kwashe ci gaba wanda aka ajiye ga Duniyar kwallon a wasanni ta kulawa a jiya. Wanda ya bada mayar da ayyuka, da mutane kuma akwai amfani ma'abota da aka yabawa a cikin feshin.","Translation:
+
+In a move to promote fair play in basketball history, CBA (Chinese Basketball Association) has fined one team and its fans, as well as several players, for ""violating sportsmanship"" during the playoffs. On April 17th, the CBA punished the Shanghai Jushilong Lions and the Suzhou Kenitex basketball teams for their misconduct in two separate games. The teams were both fined 5 million yuan and several players were also banned from playing for two years. The CBA also announced a new program to encourage fair and honest play in basketball games.
+
+The Shanghai Jushilong team was penalized for aggressive play and unsportsmanlike conduct during a game against Shenzhen Marco Polo. The Suzhou Kenitex team, on the other hand, was penalized for the unruly behavior of their fans during a game against Beijing Ducks. The fine imposed on the teams was intended to send a strong message that the CBA is serious about promoting fair play in basketball history.
+
+In response to the penalties, CBA CEO Zhang Xiong stated that enforcing fair play was a priority for the organization, and that its efforts were aimed at ensuring that players and fans alike were held accountable for their actions on the court. Yao Ming, Chairman of CBA, also commented that the league was committed to improving sportsmanship in basketball, and that it would continue to take strong measures to penalize those who violated the rules of fair play.
+
+The new fair play initiative launched by CBA includes a series of programs and incentives aimed at promoting honest play, including training sessions for referees and players, as well as new rules and regulations designed to encourage good behavior on the court. The programs are part of a broader effort to improve the overall quality of basketball in China and promote the sport as a positive and fair-minded activity for all.
+****************English Meaning****************
+Translation:
+
+In an effort to promote fair play in basketball, the Chinese Basketball Association (CBA) has fined one team, its fans, and several players for ""violating sportsmanship"" during the playoffs. On April 17th, the CBA punished the Shanghai Jushilong Lions and the Suzhou Kenitex basketball teams for their misconduct in two separate games. Both teams were fined 5 million yuan and several players were also banned from playing for two years. The CBA also announced a new program to encourage fair and honest play in basketball games.
+
+The Shanghai Jushilong team was penalized for aggressive play and unsportsmanlike conduct during a game against Shenzhen Marco Polo. The Suzhou Kenitex team was penalized for the unruly behavior of their fans during a game against Beijing Ducks. The fine imposed on the teams was intended to communicate the message that the CBA takes promoting fair play in basketball seriously.
+
+In response to the penalties, CBA CEO Zhang Xiong stated that enforcing fair play was a priority for the organization and that its efforts were aimed at ensuring that players and fans were held accountable for their actions on the court. Yao Ming, Chairman of CBA, also commented that the league was committed to improving sportsmanship in basketball, and that it would continue to penalize those who violate the rules.
+
+The new fair play initiative launched by CBA includes training sessions for referees and players, as well as new rules and regulations designed to encourage good behavior on the court. These programs are part of a broader effort to improve the quality of basketball in China and promote the sport as a positive and fair-minded activity for all.","I need help with a translation from Hausa to English: 
+
+I would appreciate assistance with obtaining information about the history of the basketball team: CBA killed a one-game winning streak and the opinions of many fans and some players in the ""Basketball World Cup"" historical event. On April 17, the CBA hosted a historical event between the Shanghai Jushilong Lions and the Suzhou Kenitex basketball teams. The teams competed in a best-of-two series during the CBA playoffs. Therefore, the CBA began recording the histories of the two teams and launched a special program for the season with a prize of 5 million yuan ($700,000). The team's executives also participated, including Li Chunjiang and Li Nan, coaches of the Shanghai Jushilong and Suzhou Kenitex teams, respectively, discussing the various games. Additionally, Shilinjie, an expert of the Kenitex team, and Jiang Yusheng, an expert of the Jushilong team, offered their analysis for two years. You can find the pictures that were captured during the first week of the CBA playoffs to offset Jushilong and Shenzhen Marco Polo. However, due to problems, Shenzhen Marco Polo was excluded from the playoffs. Zhang Xiong, CEO of CBA, pointed out that work injury should be noted as a priority issue by professional athletes. Yao Ming, chairman of CBA, also said that he has decided to pay more attention to the use of technology in sports from now on. The program features interviews with players and staff and highlights of the games.","I need help with a translation from Hausa to English:
+
+Ina bukatar taimakon bayani game da kuma bayanai game da fasali na wasan kwallon basket: CBA ta bamu tsakanin tasha game daya da su kasance daya na fasali da kuma wasu fans da kuma wasu masu karatu a ranar ""Basketball World Cup"". A ranar 17 ga watan Afrilu, CBA ta zarga game da batsa ta bamu tsakanin Shanghai Jushilong Lions da kuma Suzhou Kenitex basketball teams. Wasu fasali sun kare shiame-shiame tsakanin biyu a cikin fasali na CBA playoffs. Ka kalla, CBA ta fara samun bayanai game da fasali biyu da kuma haɗarin maɓallin ta na sabon fasalin da aka ba da fushin 5 milyan yuan ($ 700,000). Kunnawa masana'anta na fasali kuma sun noma, kamar Li Chunjiang da Li Nan, masu karatu na Shanghai Jushilong da Suzhou Kenitex, kuna musayar rayuwar hanyoyin wasu na wasu fasali. Sannan kuma, Shilinjie, tsaro na Kenitex, da Jiang Yusheng, tsaro na Jushilong, su kaḍer da bayani game biyu don biyu watan shekaru biyu. Za ka iya samun hotuna da aka saka a watan shekarar fasali na CBA don tsawon Jushilong da kuma Shenzhen Marco Polo. Duk da haka, saboda matsaloli, Shenzhen Marco Polo ta kansu daga fasali na CBA playoffs. Zhang Xiong, CEO na CBA, ya bayyana cewa cin hanci ya zamo shugaban fasali na kasuwanci bisa kowa. Yao Ming, tsohon shugaban cibiyar CBA, kuma ya ce ya dubi cewa ya gaskata matsaloli a zama tallafin sauƙi a tsari. Wannan tarihin yana bayarwa da wasu karin hirar da kuma bayanai game da fasali.","Ina bukatar taimakon bayani game da kuma bayanai game da fasali na wasan kwallon basket: CBA ta bamu tsakanin tasha game daya da su kasance daya na fasali da kuma wasu fans da kuma wasu masu karatu a ranar ""Basketball World Cup"". A ranar 17 ga watan Afrilu, CBA ta zarga game da batsa ta bamu tsakanin Shanghai Jushilong Lions da kuma Suzhou Kenitex basketball teams. Wasu fasali sun kare shiame-shiame tsakanin biyu a cikin fasali na CBA playoffs. Ka kalla, CBA ta fara samun bayanai game da fasali biyu da kuma haɗarin maɓallin ta na sabon fasalin da aka ba da fushin 5 milyan yuan ($ 700,000). Kunnawa masana'anta na fasali kuma sun noma, kamar Li Chunjiang da Li Nan, masu karatu na Shanghai Jushilong da Suzhou Kenitex, kuna musayar rayuwar hanyoyin wasu na wasu fasali. Sannan kuma, Shilinjie, tsaro na Kenitex, da Jiang Yusheng, tsaro na Jushilong, su kaḍer da bayani game biyu don biyu watan shekaru biyu. Za ka iya samun hotuna da aka saka a watan shekarar fasali na CBA don tsawon Jushilong da kuma Shenzhen Marco Polo. Duk da haka, saboda matsaloli, Shenzhen Marco Polo ta kansu daga fasali na CBA playoffs. Zhang Xiong, CEO na CBA, ya bayyana cewa cin hanci ya zamo shugaban fasali na kasuwanci bisa kowa. Yao Ming, tsohon shugaban cibiyar CBA, kuma ya ce ya dubi cewa ya gaskata matsaloli a zama tallafin sauƙi a tsari. Wannan tarihin yana bayarwa da wasu karin hirar da kuma bayanai game da fasali."
