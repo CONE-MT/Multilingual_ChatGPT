@@ -1,7 +1,12 @@
 # Multilingual ChatGPT
 [中文介绍（README in Chinese)](./README_chinese.md)
 
-This is a simple ChatGPT demo that supports multilingual speech. We support both speech and text input. We use [Streamlit](https://streamlit.io/) to build our app. 
+Basically, translate-input-to-English is a super cheap way to expand a large language model (LLM) to support massively multilingual languages. 
+
+In this demo, we build a simple ChatGPT service that automatically translates input into English, and then translate ChatGPT English response to the target language. We find that even ChatGPT, translate-to-English still can achieve better results. 
+
+
+We support both speech and text input. We use [Streamlit](https://streamlit.io/) to build our app. 
 We use code from [this repository](https://github.com/stefanrmmr/streamlit_audio_recorder) to accept recordings from the frontend.
 Then the speech will be converted to text using [Whisper](https://github.com/openai/whisper).
 Our backend will call our multilingual translation service to translate recognized text into English. Then we will use [ChatGPT API](https://platform.openai.com/docs/guides/chat) to get the reply.
