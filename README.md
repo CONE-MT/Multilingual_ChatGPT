@@ -3,7 +3,7 @@
 
 Basically, translate-input-to-English is a super cheap way to expand a large language model (LLM) to support massively multilingual languages. 
 
-In this demo, we build a simple ChatGPT service that automatically translates input into English, and then translate ChatGPT English response to the target language. We find that even ChatGPT, translate-to-English still can achieve better results. 
+In this demo, we build a simple ChatGPT service that automatically translates input into English, and then translates ChatGPT English response to the target language. We find that even ChatGPT, translate-to-English still can achieve better results. 
 
 
 We support both speech and text input. We use [Streamlit](https://streamlit.io/) to build our app. 
