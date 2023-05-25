@@ -1,9 +1,13 @@
 # 多语言ChatGPT
 
-这是一个支持多语言语音的简单ChatGPT演示。我们同时支持语音和文本输入。
-我们使用[Streamlit](https://streamlit.io/)来构建我们的应用。我们使用来自[这个仓库](https://github.com/stefanrmmr/streamlit_audio_recorder)的代码来接收前端的录音。
-然后，语音会通过[Whisper](https://github.com/openai/whisper)转换为文本。我们的后端将调用我们的多语言翻译服务将识别的文本翻译成英文。
-最后我们将使用[ChatGPT API](https://platform.openai.com/docs/guides/chat)来获取回复。回复也将通过我们的多语言翻译服务翻译回输入的语言。
+
+
+在处理多语言模型的时候，将输入翻译为英语基本上是目前最便捷的实现多语言LLM的方式。我们发现就算是ChatGPT，在某些语言上将输入翻译为英语也会获得一些更好的用户体验。
+
+这是一个支持多语言输入的简单ChatGPT。我们支持1. ChatGPT交互和2. 翻译为英语-ChatGPT交互-翻译为目标语言两种方式进行回答。
+
+此demo使用来自[这个仓库](https://github.com/stefanrmmr/streamlit_audio_recorder)的代码来接收前端的录音。语音内容会通过[Whisper](https://github.com/openai/whisper)转换为文本。后端将调用多语言翻译服务将识别的文本翻译成英文。
+最后我们将使用[ChatGPT API](https://platform.openai.com/docs/guides/chat)来获取回复。回复也将通过多语言翻译服务翻译回输入的语言。
 
 
 ## 动机
